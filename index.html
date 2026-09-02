@@ -11,6 +11,7 @@
 </head>
 <body>
 
+    <!-- Cabeçalho / Navegação -->
     <header>
         <div class="logo">IT 🎈 DERRY</div>
         <nav>
@@ -18,11 +19,12 @@
                 <li><a href="#home">Início</a></li>
                 <li><a href="#filmes">Os Filmes</a></li>
                 <li><a href="#serie">Bem-Vindos a Derry</a></li>
-                <li><a href="#personagens">Pennywise</a></li>
+                <li><a href="#personagens">Personagens</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Seção Principal (Hero) -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Você Também Vai Flutuar</h1>
@@ -31,6 +33,7 @@
         </div>
     </section>
 
+    <!-- Seção dos Filmes -->
     <section id="filmes" class="content-section">
         <h2>Os Filmes</h2>
         <div class="card-container">
@@ -45,6 +48,7 @@
         </div>
     </section>
 
+    <!-- Seção da Série -->
     <section id="serie" class="content-section dark-bg">
         <h2>Série: Bem-Vindos a Derry</h2>
         <div class="serie-content">
@@ -57,19 +61,61 @@
         </div>
     </section>
 
+    <!-- Seção dos Personagens (NOVA) -->
     <section id="personagens" class="content-section">
-        <h2>Pennywise, o Palhaço Dançarino</h2>
-        <p>A entidade cósmica conhecida como "IT" acorda a cada 27 anos para se alimentar dos medos (e da carne) dos habitantes de Derry, especialmente das crianças.</p>
+        <h2>Personagens Principais</h2>
+        
+        <div class="character-grid">
+            <!-- Pennywise -->
+            <div class="character-card">
+                <img src="https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=600&q=80" alt="Pennywise" class="character-img">
+                <div class="character-info">
+                    <h3>Pennywise</h3>
+                    <p>A entidade ancestral que assume a forma de um palhaço para atrair e aterrorizar as crianças de Derry a cada 27 anos.</p>
+                </div>
+            </div>
+
+            <!-- Bill Denbrough -->
+            <div class="character-card">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Bill Denbrough" class="character-img">
+                <div class="character-info">
+                    <h3>Bill Denbrough</h3>
+                    <p>O líder determinado do "Clube dos Otários", motivado pela busca e vingança do seu irmão mais novo, Georgie.</p>
+                </div>
+            </div>
+
+            <!-- Beverly Marsh -->
+            <div class="character-card">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Beverly Marsh" class="character-img">
+                <div class="character-info">
+                    <h3>Beverly Marsh</h3>
+                    <p>A única garota do grupo principal, corajosa e essencial para manter o Clube dos Otários unido contra o mal.</p>
+                </div>
+            </div>
+
+            <!-- Richie Tozier -->
+            <div class="character-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Richie Tozier" class="character-img">
+                <div class="character-info">
+                    <h3>Richie Tozier</h3>
+                    <p>O piadista do grupo que usa o humor como mecanismo de defesa contra os piores terrores da cidade.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gerador de Frases do Pennywise -->
         <div class="quote-box">
             <p id="quote-text">"Nós todos flutuamos aqui em baixo. Você também vai flutuar!"</p>
             <button id="quote-btn" class="btn-secondary">Mudar Frase de Pennywise</button>
         </div>
     </section>
 
+    <!-- Rodapé -->
     <footer>
         <p>&copy; Fan Site de IT e Bem-Vindos a Derry. Criado para fãs de Stephen King.</p>
     </footer>
 
+    <!-- Elementos dinâmicos gerados pelo JS -->
     <div id="balloon-container"></div>
 
     <script src="script.js"></script>
